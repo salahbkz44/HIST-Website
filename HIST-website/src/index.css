@@ -1,0 +1,85 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@theme {
+  --font-poppins: Poppins, sans-serif;
+  --font-inter: Inter, sans-serif;
+  --font-rubik: Rubik, sans-serif;
+  --font-roboto: Roboto, sans-serif;
+  --font-epilogue: Epilogue, sans-serif;
+  --color-hist-green: #02382b;
+  --color-form-border-beige: #ccb290;
+  --color-hist-text-beige: #dda761;
+  --color-hist-beige: #d5bb97;
+  --color-hist-beige-light: #d5bb9724;
+  --color-hist-green-effect: #01261f;
+}
+/* styles.css */
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
+
+.custom-bg {
+  position: relative;
+  background: linear-gradient(rgba(7, 59, 46, 0.7), rgba(7, 59, 46, 0.7)),
+    url("./assets/hero-bg.png") no-repeat center center/cover;
+}
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Adjust blur intensity */
+  z-index: 0;
+}
+.backdrop-blur-custom {
+  --tw-backdrop-blur: blur(6px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur);
+  backdrop-filter: var(--tw-backdrop-blur);
+}
+.bg-green {
+  background-color: #073b2e;
+}
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
