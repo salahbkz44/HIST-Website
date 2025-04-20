@@ -8,13 +8,13 @@ export default function Partners() {
         {" "}
         <div className="h-full bg-[#2D2D2DCC] w-2/6"></div>
       </div>
-      <div className="w-full flex justify-center !py-10 items-center">
+      <div className="w-full flex justify-center !py-0 md:!py-10 items-center">
         <div className="w-[85%] flex flex-col !mb-20">
-          <h1 className="text-[1.8rem] uppercase tracking-[0.2em] font-poppins  font-medium  !mt-10 text-hist-green">
+          <h1 className="md:text-[1.8rem] text-xl uppercase tracking-[0.2em] font-poppins  font-medium  !mt-10 text-hist-green">
             PARTNERS
           </h1>
           <h1
-            className="!m-0 inline w-fit uppercase text-[65px] font-extrabold text-hist-green text-left font-rubik"
+            className="inline md:w-fit  uppercase md:text-[65px] text-[40px]  font-extrabold md:!mb-0 !mb-8 text-hist-green font-rubik"
             style={{
               WebkitTextFillColor: isHovered ? "currentColor" : "transparent",
               WebkitTextStrokeWidth: isHovered ? "0px" : "2px",

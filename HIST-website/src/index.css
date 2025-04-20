@@ -60,6 +60,11 @@
   background-color: #073b2e;
 }
 
+.whyus {
+  height: calc(100vh - 70px);
+  overflow: hidden;
+}
+
 /* Reset default browser styles */
 * {
   margin: 0;

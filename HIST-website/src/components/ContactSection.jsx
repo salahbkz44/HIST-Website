@@ -11,7 +11,10 @@ export default function ContactSection() {
         {" "}
         <div className="h-full bg-[#2D2D2DCC] w-5/6"></div>
       </div>
-      <div className="flex w-full justify-between bg-hist-beige justify-end !pl-20">
+      <div
+        id="contact"
+        className="flex w-full  bg-hist-beige justify-end !pl-20"
+      >
         <div className="relative flex !pl-1/8   overflow-hidden">
           {/* Left Column - Logo + Social Media */}
           <div className="w-1/3  flex flex-col items-start justify-center text-white">

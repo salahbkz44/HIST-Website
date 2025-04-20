@@ -10,7 +10,7 @@ import "swiper/css/autoplay";
 
 export default function Carousel() {
   return (
-    <div className="w-full !mt-20" style={{ height: "calc(100vh - 80px)" }}>
+    <div className="w-full !mt-20 h-auto md:h-[calc(100vh-80px)]">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
@@ -51,9 +51,9 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-full">
-            <h1 className="h1Carousel absolute top-1/2 left-1/2 z-10 text-white drop-shadow-2xl text-center w-full text-7xl font-bold transform -translate-x-1/2 -translate-y-1/2">
+            <h1 className="h1Carousel md:text-7xl absolute top-1/2 left-1/2 z-10 text-white drop-shadow-2xl text-center w-full text-2xl font-bold transform -translate-x-1/2 -translate-y-1/2">
               welcome to{" "}
-              <span className="bg-hist-beige !h-[85px] !p-0 shadow-md inline-block">
+              <span className="bg-hist-beige md:!h-[85px] !p-0 shadow-md inline-block">
                 Hist
               </span>{" "}
               Academy
@@ -67,7 +67,7 @@ export default function Carousel() {
         </SwiperSlide>
 
         {/* Navigation Arrows */}
-        <div className="custom-prev absolute left-4 top-1/2 z-10 -translate-y-1/2 w-12 h-12 rounded-full bg-[#073B2E]/60 backdrop-blur-sm flex items-center justify-center cursor-pointer">
+        <div className="custom-prev absolute left-4 top-1/2 z-10 -translate-y-1/2 md:w-12 md:h-12 rounded-full bg-[#073B2E]/60 backdrop-blur-sm flex items-center justify-center cursor-pointer">
           <svg
             className="w-6 h-6 text-hist-beige"
             fill="none"
@@ -83,7 +83,7 @@ export default function Carousel() {
           </svg>
         </div>
 
-        <div className="custom-next absolute right-4 top-1/2 z-10 -translate-y-1/2 w-12 h-12 rounded-full bg-[#073B2E]/60 backdrop-blur-sm flex items-center justify-center cursor-pointer">
+        <div className="custom-next absolute right-4 top-1/2 z-10 -translate-y-1/2 md:w-12 md:h-12 rounded-full bg-[#073B2E]/60 backdrop-blur-sm flex items-center justify-center cursor-pointer">
           <svg
             className="w-6 h-6 text-hist-beige"
             fill="none"

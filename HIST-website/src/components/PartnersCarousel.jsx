@@ -30,12 +30,12 @@ export default function PartnerMarquee() {
         {logos.map((partner, index) => (
           <div
             key={`${partner.id}-${index}`}
-            className="flex items-center justify-center min-w-[160px] !px-6"
+            className="flex items-center justify-center min-w-20 md:min-w-[160px] !px-6"
           >
             <img
               src={partner.logo}
               alt={partner.name}
-              className="h-30 w-auto object-contain"
+              className="md:h-30 h-15 w-auto object-contain"
             />
           </div>
         ))}
