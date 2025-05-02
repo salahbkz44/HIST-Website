@@ -37,11 +37,11 @@ export default function ContactUs() {
         {" "}
         <div className="h-full bg-[#2D2D2DCC] w-4/6"></div>
       </div>
-      <div className="w-full flex !py-15 md:!py-0 justify-around items-center bg-[#02382B0D]">
+      <div className="w-full flex !py-15 md:!py-10 justify-around items-center bg-[#02382B0D]">
         <div className="flex flex-col items-center  justify-center w-full md:w-1/2 h-full gap-8 !px-[3%] md:!p-10 md:!pl-30">
           <div className="flex flex-col md:justify-start items-center md:items-start w-full">
             <h1
-              className="inline w-fit uppercase text-4xl md:text-[65px] font-extrabold text-hist-green text-center md:text-left font-rubik"
+              className="inline w-fit uppercase text-4xl md:text-[63px] md:!mb-5 font-extrabold text-hist-green text-center md:text-left font-rubik"
               style={{
                 WebkitTextFillColor: isHovered ? "currentColor" : "transparent",
                 WebkitTextStrokeWidth: isHovered ? "0px" : "2px",
@@ -50,10 +50,11 @@ export default function ContactUs() {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              Contact Us
+              Contactez-nous
             </h1>
             <p className="font-poppins text-lg md:text-xl md:text-left text-center">
-              We are here to help you with any questions or support you need.
+              Nous sommes là pour vous aider avec toutes vos questions ou pour
+              vous apporter le soutien dont vous avez besoin.
             </p>
           </div>
           <form
@@ -63,7 +64,7 @@ export default function ContactUs() {
             <div className="flex md:flex-row flex-col gap-5 w-full">
               <input
                 type="text"
-                placeholder="Your name"
+                placeholder="Votre nom"
                 name="name"
                 className="md:w-2/5 w-full !p-4 bg-white rounded-sm text-xl border border-form-border-beige focus:outline-none focus:ring-2 focus:ring-hist-green"
                 required
@@ -71,7 +72,7 @@ export default function ContactUs() {
               <input
                 type="email"
                 name="email"
-                placeholder="Your email"
+                placeholder="Votre email"
                 className="md:w-3/5 w-full !p-4 bg-white rounded-sm text-xl border border-form-border-beige focus:outline-none focus:ring-2 focus:ring-hist-green"
                 required
               />
@@ -87,7 +88,7 @@ export default function ContactUs() {
               type="submit"
               className="w-full !p-4  text-xl font-regular text-white bg-hist-green hover:font-medium hover:bg-green-900"
             >
-              SEND
+              Envoyer
             </button>
           </form>
         </div>
@@ -115,6 +116,10 @@ export default function ContactUs() {
             />
           </div>
         </div>
+      </div>
+      <div className="h-1 w-screen bg-[#2D2D2D33]">
+        {" "}
+        <div className="h-full bg-[#2D2D2DCC] w-5/6"></div>
       </div>
     </>
   );

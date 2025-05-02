@@ -1,10 +1,10 @@
-import profile from "../assets/DIRECTORpic.png";
+import profile from "../assets/DIRECTORpic.jpg";
 import QuoteIcon from "../assets/QuoteIcon.svg";
 import { useState } from "react";
 export default function DirectorWord() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="w-full flex-col !px-[5%] md:!py-20 !py-10 flex h-screen ">
+    <div className="w-full flex-col !px-[5%] md:!py-30 !py-10 flex h-auto ">
       <h1
         className="inline md:w-fit  uppercase md:text-[65px] text-[40px] md:text-left text-center font-extrabold text-hist-green font-rubik"
         style={{
@@ -15,7 +15,7 @@ export default function DirectorWord() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        Director Word
+        Mot du Directeur
       </h1>
       <div className="flex flex-col md:flex-row justify-between  gap-4 !mt-10">
         <div className="flex min-w-[30%] ">
@@ -29,8 +29,8 @@ export default function DirectorWord() {
             <p className="text-xl w-max md:hidden font-medium text-hist-green relative z-10">
               Abdelkader Mazouz
             </p>
-            <p className="text-lg md:hidden  text-hist-blue relative z-10">
-              Director
+            <p className="text-lg md:hidden  text-hist-beige relative z-10">
+              Directeur
             </p>
           </div>
         </div>
@@ -44,8 +44,8 @@ export default function DirectorWord() {
             <p className="text-5xl hidden md:block font-medium text-hist-green mt-10 relative z-10">
               Abdelkader Mazouz
             </p>
-            <p className="text-3xl hidden md:block text-hist-blue relative z-10">
-              Director
+            <p className="text-3xl hidden md:block text-hist-beige relative z-10 !mb-5">
+              Directeur
             </p>
             <p className="md:text-[19px] text-sm font-normal text-gray-600 max-w-[95%] md:max-w-[90%] relative z-10">
               Bienvenue au{" "}

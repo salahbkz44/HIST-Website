@@ -15,10 +15,10 @@ const NavBar = () => {
       {/* Desktop Layout */}
       <div className="hidden lg:flex items-center justify-between h-full">
         {/* Left Nav */}
-        <ul className="flex justify-around max-w-3/8 w-1/3 flex-1 space-x-4 h-full !pl-10 !pr-2">
+        <ul className="flex justify-around max-w-3/8 w-1/3 flex-1 space-x-4 h-full !pl-5 !pr-2">
           <li className="relative flex justify-center flex-1 items-center h-full hover:font-medium hover:bg-hist-green-effect hover:text-hist-beige hover:border-b-2 border-hist-beige group">
-            <Link to="/hist-academy" className="!px-4 !py-2 flex items-center">
-              HIST Academy
+            <Link to="/hist-academy" className=" flex items-center uppercase">
+              HIST Académie
             </Link>
             <ul className="absolute text-xl top-full left-0 w-full bg-hist-green text-white font-light shadow-lg overflow-hidden transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
               <li className="hover:bg-hist-green-effect hover:text-hist-beige hover:border-b-2 border-hist-beige !px-4 !py-3 transition-colors duration-200">
@@ -45,7 +45,7 @@ const NavBar = () => {
                   className="block"
                   smooth
                 >
-                  Espace Etudiant
+                  Espace Étudiant
                 </HashLink>
               </li>
               <li className="hover:bg-hist-green-effect hover:text-hist-beige hover:border-b-2 border-hist-beige !px-4 !py-3 transition-colors duration-200">
@@ -80,22 +80,22 @@ const NavBar = () => {
         </div>
 
         {/* Right Nav */}
-        <ul className="flex justify-around w-1/3 max-w-3/8 flex-1 space-x-4 h-full !pr-10 !pl-2">
-          <li className="flex justify-center flex-1 items-center h-full hover:font-medium hover:bg-hist-green-effect hover:text-hist-beige hover:border-b-2 border-hist-beige">
+        <ul className="flex justify-around w-1/3 max-w-3/8 flex-1 space-x-4 h-full !pr-5 !pl-2">
+          <li className="flex justify-center text-xl flex-1 items-center h-full hover:font-medium hover:bg-hist-green-effect hover:text-hist-beige hover:border-b-2 border-hist-beige">
             <Link
               to="/communaute-educative-et-professionelle"
-              className="!px-4 !py-2 flex items-center"
+              className="flex items-center uppercase leading-tight w-full"
             >
-              COMMUNAUTE EDUCATIVE
+              Communauté Éucative et Professionnelle
             </Link>
           </li>
           <li className="flex justify-center !px-5 items-center h-full hover:font-medium hover:bg-hist-green-effect hover:text-hist-beige hover:border-b-2 border-hist-beige">
             <HashLink
               to="#contact"
-              className="!px-4 !py-2 flex items-center"
+              className="!px-4 !py-2 flex items-center uppercase"
               smooth
             >
-              CONTACT US
+              Contactez-nous
             </HashLink>
           </li>
         </ul>
@@ -131,14 +131,18 @@ const NavBar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-hist-green text-white text-xl font-light !p-4 space-y-4 z-40">
           <div>
-            <Link to="/" className="block !py-4 hover:text-hist-beige">
+            <Link
+              to="/"
+              className="block !py-4 hover:text-hist-beige"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Home
             </Link>
             <button
               onClick={() => setShowHistSubMenu(!showHistSubMenu)}
               className="w-full !py-4 text-left font-medium hover:text-hist-beige flex items-center justify-between"
             >
-              <span>HIST Academy</span>
+              <span>HIST académie</span>
               {showHistSubMenu ? (
                 <ChevronUp className="w-5 h-5" />
               ) : (
@@ -151,6 +155,7 @@ const NavBar = () => {
                   <HashLink
                     to="/hist-academy#presentation"
                     className="block !py-2 hover:text-hist-beige"
+                    onClick={() => setMobileMenuOpen(false)}
                     smooth
                   >
                     Presentation
@@ -160,6 +165,7 @@ const NavBar = () => {
                   <HashLink
                     to="/hist-academy#nos-programs"
                     className="block !py-2 hover:text-hist-beige"
+                    onClick={() => setMobileMenuOpen(false)}
                     smooth
                   >
                     Nos Programmes
@@ -169,15 +175,17 @@ const NavBar = () => {
                   <HashLink
                     to="/hist-academy#espace-etudiant"
                     className="block !py-2 hover:text-hist-beige"
+                    onClick={() => setMobileMenuOpen(false)}
                     smooth
                   >
-                    Espace Etudiant
+                    Espace Étudiant
                   </HashLink>
                 </li>
                 <li>
                   <Link
                     to="/admission"
                     className="block !py-2 hover:text-hist-beige"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     Admission
                   </Link>
@@ -185,24 +193,34 @@ const NavBar = () => {
               </ul>
             )}
           </div>
-          <Link to="/cec" className="block !py-4 hover:text-hist-beige">
+          <Link
+            to="/cec"
+            className="block !py-4 hover:text-hist-beige"
+            onClick={() => setMobileMenuOpen(false)}
+          >
             CEC
           </Link>
-          <Link to="/hrp" className="block !py-4 hover:text-hist-beige">
+          <Link
+            to="/hrp"
+            className="block !py-4 hover:text-hist-beige"
+            onClick={() => setMobileMenuOpen(false)}
+          >
             HRP
           </Link>
           <Link
             to="/communaute-educative-et-professionelle"
             className="block !py-4 hover:text-hist-beige"
+            onClick={() => setMobileMenuOpen(false)}
           >
             COMMUNAUTE EDUCATIVE
           </Link>
           <HashLink
             to="#contact"
             className="block !py-4 hover:text-hist-beige"
+            onClick={() => setMobileMenuOpen(false)}
             smooth
           >
-            CONTACT US
+            CONTACTEZ-NOUS
           </HashLink>
         </div>
       )}

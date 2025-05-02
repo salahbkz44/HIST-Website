@@ -1,7 +1,4 @@
 import React from "react";
-import FAU from "../assets/FAU.png";
-import UCM from "../assets/UCM.webp";
-import VATELFR from "../assets/VATELFRANCE.svg";
 import ADAMING from "../assets/ADAMING.png";
 import KPMG from "../assets/kpmg.webp";
 import cisco from "../assets/cisco.png";
@@ -10,15 +7,12 @@ import blueprint from "../assets/blue-print.webp";
 import AMCHAM from "../assets/AMCHAM.svg";
 
 const partners = [
-  { id: 1, name: "FAU", logo: FAU },
-  { id: 2, name: "UCM", logo: UCM },
-  { id: 3, name: "Vatel France", logo: VATELFR },
-  { id: 4, name: "AdamIng", logo: ADAMING },
-  { id: 5, name: "KPMG", logo: KPMG },
-  { id: 6, name: "Cisco", logo: cisco },
-  { id: 7, name: "Aidotek", logo: aidotek },
-  { id: 8, name: "Blueprint", logo: blueprint },
-  { id: 9, name: "AMCHAM", logo: AMCHAM },
+  { id: 1, name: "AdamIng", logo: ADAMING },
+  { id: 2, name: "KPMG", logo: KPMG },
+  { id: 3, name: "Cisco", logo: cisco },
+  { id: 4, name: "Aidotek", logo: aidotek },
+  { id: 5, name: "Blueprint", logo: blueprint },
+  { id: 6, name: "AMCHAM", logo: AMCHAM },
 ];
 
 export default function PartnerMarquee() {

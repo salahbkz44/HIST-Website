@@ -3,6 +3,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import carouselImg1 from "../assets/carousel1.png";
 import carouselImg2 from "../assets/carousel2.png";
 import carouselImg3 from "../assets/carousel3.png";
+import carouselImg4 from "../assets/carousel4.png";
+import carouselImg5 from "../assets/carousel5.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -33,8 +35,24 @@ export default function Carousel() {
         {/* Slides */}
         <SwiperSlide>
           <div className="w-full h-full">
+            <h1 className="h1Carousel md:text-7xl absolute top-1/2 left-1/2 z-10 text-white drop-shadow-2xl text-center w-full text-2xl font-bold transform -translate-x-1/2 -translate-y-1/2">
+              Bienvenue à{" "}
+              <span className="bg-hist-beige md:!h-[85px] !p-0 shadow-md inline-block">
+                Hist
+              </span>{" "}
+              INSTITUTE
+            </h1>
             <img
-              src={carouselImg1}
+              src={carouselImg5}
+              alt=""
+              className="w-full h-full object-[center_80%] object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full">
+            <img
+              src={carouselImg3}
               alt=""
               className="w-full h-full object-cover"
             />
@@ -45,21 +63,23 @@ export default function Carousel() {
             <img
               src={carouselImg2}
               alt=""
+              className="w-full h-full object-bottom object-cover"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-full">
+            <img
+              src={carouselImg4}
+              alt=""
               className="w-full h-full object-cover"
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-full">
-            <h1 className="h1Carousel md:text-7xl absolute top-1/2 left-1/2 z-10 text-white drop-shadow-2xl text-center w-full text-2xl font-bold transform -translate-x-1/2 -translate-y-1/2">
-              welcome to{" "}
-              <span className="bg-hist-beige md:!h-[85px] !p-0 shadow-md inline-block">
-                Hist
-              </span>{" "}
-              Academy
-            </h1>
             <img
-              src={carouselImg3}
+              src={carouselImg1}
               alt=""
               className="w-full h-full object-cover"
             />
@@ -94,7 +114,7 @@ export default function Carousel() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={3}
-              d="M9 5l7 7-7 7"
+              d="M9 19l7-7-7-7"
             />
           </svg>
         </div>
