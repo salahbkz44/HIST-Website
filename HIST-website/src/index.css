@@ -37,11 +37,13 @@
   }
 }
 
-.clip-desktop {
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+@media (min-width: 768px) {
+  .clip {
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%) !important;
+  }
 }
 
-.clip-mobile {
+.clip {
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
 }
 

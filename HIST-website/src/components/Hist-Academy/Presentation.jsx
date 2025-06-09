@@ -13,17 +13,17 @@ export default function Presentation() {
             Programmes
           </p>
           <h1 className="md:text-8xl text-[43px] font-bold text-[#2D2D2D] !my-5 md:!my-10">
-            HIST Academie
+            HIST Université
           </h1>
           <p className="md:text-2xl text-lg text-[#2D2D2D] md:!my-5 w-full md:w-11/12">
-            <strong>HIST Academie</strong>, HIST académie, agréée par le
+            <strong>HIST Université</strong>, HIST université, agréée par le
             ministère de l'enseignement supérieur et de la recherche
             scientifique sous le numéro d'agrément 1137, se distingue par
             l'enseignement en anglais des programmes de licences suivants:{" "}
           </p>
           <ul className="list-disc !ml-5">
             <li className="md:text-2xl text-lg text-[#2D2D2D] w-full md:w-11/12">
-              Informatique et intelligences artificielle
+              Informatique et intelligence artificielle
             </li>
             <li className="md:text-2xl text-lg text-[#2D2D2D] w-full md:w-11/12">
               Management{" "}

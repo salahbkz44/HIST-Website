@@ -13,21 +13,21 @@ export default function AboutUs() {
             {/* <h1 className="md:text-[2rem] !mb-3 md:!mb-0 text-xl uppercase tracking-[0.2em] font-poppins font-medium mt-10 text-hist-text-beige">
               À Propos De Nous
             </h1> */}
-            <h1 className="md:text-[3.25rem] !mb-5 md:!mb-10 text-3xl uppercase tracking-[0.15em] font-poppins font-semibold  text-hist-text-beige">
+            <h1 className="md:text-[3.25rem] !mb-5 md:!mb-10 text-[2rem] uppercase tracking-[0.15em] font-poppins font-semibold  text-hist-text-beige">
               À Propos De Nous
             </h1>
             {/* <h1 className="font-poppins !mb-5 md:!mb-0 md:text-[3.25rem] text-4xl font-bold text-[#1E1E1E]">
               C'est Qui HIST
             </h1> */}
             <p className="md:text-2xl text-lg leading-[1.5] !mt-5 w-11/12 text-left text-[#1A1A1A] text-roboto">
-              <strong>HIST Higher Institute of Science and Technology</strong>{" "}
-              est une institution privée innovante située à Dely Brahim, Alger,
+              <strong>HIST Higher Institute of Science & Technology</strong> est
+              une institution privée innovante située à Dely Brahim, Alger,
               regroupant trois entités complémentaires :{" "}
               <Link
                 to="/hist-academy"
                 className="font-bold text-hist-green underline hover:text-hist-green-effect"
               >
-                HIST Académie
+                HIST Université
               </Link>
               ,{" "}
               <Link
@@ -55,21 +55,21 @@ export default function AboutUs() {
             style={{ backgroundImage: `url(${pic})` }}
           >
             <h1
-              className="text-white font-epilogue font-bold text-5xl md:text-7xl"
+              className="text-white font-epilogue font-bold text-5xl uppercase md:text-7xl"
               style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
-              HIST ACADÉMIE
+              HIST université
             </h1>
           </div>
           <div
-            className="md:hidden flex items-center justify-center bg-contain bg-no-repeat !py-16 !mt-10 w-full"
+            className="md:hidden flex relative -right-5 md:right-0 items-center justify-center bg-contain bg-no-repeat !py-16 !mr-0 md:!pr-0 !mt-10 w-full"
             style={{ backgroundImage: `url(${picmobile})` }}
           >
             <h1
-              className="text-white font-epilogue font-bold text-5xl md:text-7xl"
+              className="text-white font-epilogue font-bold text-4xl uppercase md:text-7xl"
               style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             >
-              HIST ACADEMY
+              HIST université
             </h1>
           </div>
         </div>

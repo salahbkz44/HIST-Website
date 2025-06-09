@@ -38,7 +38,7 @@ export default function Carousel() {
             <h1 className="h1Carousel md:text-7xl absolute top-1/2 left-1/2 z-10 text-white drop-shadow-2xl text-center w-full text-2xl font-bold transform -translate-x-1/2 -translate-y-1/2">
               Bienvenue à{" "}
               <span className="bg-hist-beige md:!h-[85px] !p-0 shadow-md inline-block">
-                Hist
+                HIST
               </span>{" "}
               INSTITUTE
             </h1>
